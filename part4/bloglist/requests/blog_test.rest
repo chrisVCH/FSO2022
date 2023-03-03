@@ -1,0 +1,46 @@
+POST http://localhost:3003/api/blogs HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Test title 1",
+    "author": "Test author 1",
+    "url": "https://helloworld.com",
+    "likes": 100
+}
+
+###
+GET http://localhost:3003/api/blogs
+
+###
+POST http://localhost:3001/api/users
+Content-Type: application/application/json
+
+{ 
+    "username": "cchen1",
+    "name": "Chris Chen",
+    "password": "thisisit"
+}
+
+### 
+POST http://localhost:3003/api/login
+Content-Type: application/json
+
+{
+    "username": "cchen",
+    "password": "thisisit"
+}
+
+###
+POST http://localhost:3003/api/blogs HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNjaGVuMTIiLCJpZCI6IjYzZmU4MzM4MjkzMWI2NzM2ZTRhNzEzMSIsImlhdCI6MTY3NzYzMDc4N30.Xp1mKqlWglrzXXkWkDJt4EeZrhpJAaNgJRkk05GaSdI
+
+{
+   "title": "test for blog authorization VScode",
+   "author": "Chris Chen",
+   "url": "http://hitthebutton.com"
+}
+
+
+
+
