@@ -1,0 +1,14 @@
+POST http://localhost:3003/api/blogs/641207ab6ddacc8e1bab7331/comments
+content-type: application/json
+
+{
+   "comment": "awesome article2 from VS Code"
+}
+
+###
+POST http://localhost:3003/api/blogs/64066f69a68062b555616521/comments
+content-type: application/json
+
+{
+   "comment": "a must read for every developer version2"
+}
